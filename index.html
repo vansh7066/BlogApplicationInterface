@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Application</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-post{
+            /*display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-color: #94bbe9;
+        }
+
+        .blog-post h2{
+            color: black;
+        }
+
+        .blog-post p{
+            color:#051937;
+        }
+
+        .blog-post button {
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #007bff; 
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .blog-post button:hover {
+        background-color: #0056b3; 
+        transform: scale(1.05); 
+    }
+
+    .blog-post button:active {
+        background-color: #003f7f; 
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+<body>
+    <div class="blog">
+    <header>
+        <h1>Blog Application</h1>
+    </header>
+    <main id="blog-container">
+        <!-- Blog posts will load here -->
+    </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

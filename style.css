@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a40ae;
+}
+
+header {
+    background-color: #40367b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+main {
+    padding: 1rem;
+}
+.blog-post {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
