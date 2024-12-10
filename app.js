@@ -4,10 +4,10 @@ const blogContainer = document.getElementById("blog-container");
 // Fetching and displaying all the blog posts
 async function fetchBlogs() {
     try {
-        const response = await fetch(API_URL); // Removed `blogs` from URL
-        const { articles } = await response.json(); // Access 'articles' property from News API response
+        const response = await fetch(API_URL);
+        const { articles } = await response.json();
 
-        blogContainer.innerHTML = ""; // Clear any previous content
+        blogContainer.innerHTML = "";
         articles.forEach(article => {
             const blogElement = document.createElement("div");
            //blogContainer.style.background = "lightgray"
@@ -29,7 +29,7 @@ async function fetchBlogs() {
 // Viewing each and every blog
 async function viewBlog(url) {
     try {
-        window.open(url, "_blank"); // Open the blog in a new tab
+        window.open(url, "_blank"); // Open the new blog in a new tab.
     } catch (error) {
         console.error("Error opening blog:", error);
     }
