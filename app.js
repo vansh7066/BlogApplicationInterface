@@ -1,7 +1,7 @@
 const API_URL = "https://newsapi.org/v2/everything?q=tesla&from=2024-11-09&sortBy=publishedAt&apiKey=8751668d62b24211bf29c6649a8de079";
 const blogContainer = document.getElementById("blog-container");
 
-// Fetch and display all blog posts
+// Fetching and displaying all the blog posts
 async function fetchBlogs() {
     try {
         const response = await fetch(API_URL); // Removed `blogs` from URL
@@ -26,15 +26,14 @@ async function fetchBlogs() {
     }
 }
 
-// View full blog post
+// Viewing each and every blog
 async function viewBlog(url) {
     try {
-        // Simply open the URL since News API does not support fetching single articles
         window.open(url, "_blank"); // Open the blog in a new tab
     } catch (error) {
         console.error("Error opening blog:", error);
     }
 }
 
-// Initialize
+// Initializing the fetchBlog function
 fetchBlogs();
